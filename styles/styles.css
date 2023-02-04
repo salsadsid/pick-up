@@ -1,0 +1,16 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.menu{
+    
+        background: #242B2E;
+        
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        color: #E8BD0D;
+      
+}
