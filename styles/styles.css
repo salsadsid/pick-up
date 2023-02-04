@@ -1,16 +1,97 @@
-*{
-    margin: 0;
-    padding: 0;
+@import url('https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&family=Poppins:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&display=swap');
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 .menu{
-    
-        background: #242B2E;
-        
+        background:  #E8BD0D;
+        padding: 1.3rem;
         width: 100%;
         display: flex;
         justify-content: space-between;
         align-items: center;
-        color: #E8BD0D;
-      
+        color: #242B2E;
+        font-family: 'Poppins', sans-serif;;
 }
+.menu-icon {
+    display: none;
+  }
+  
+  ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 30%;
+  }
+  
+  li {
+    list-style: none;
+    transition: all 0.2s ease-in-out;
+  }
+  
+  li:hover,
+  li:active {
+    transform: scale(1.1) rotate3d(1, 1, 1, -10deg);
+  }
+  
+  a {
+    padding: 0.4rem;
+    text-decoration: none;
+    color: black;
+  }
+  
+  a:hover,
+  a:active {
+    color: white;
+    background: #A77B06;
+  }
+.image-container{
+    margin: 0 auto;
+}
+.image-big{
+    display: block;
+    width: 100%;
+}
+.image-small{
+    display: none;
+}
+  @media only screen and (max-width: 650px) {
+    nav {
+      flex-direction: column;
+      position: relative;
+    }
+
+    .logo {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .menu-icon {
+      display: block;
+      font-size: 1.6rem;
+    }
+
+    ul {
+      display: none;
+      flex-direction: column;
+      padding-top: 1rem;
+      width: 100%;
+      position: absolute;
+    }
+
+    ul.open {
+      display: flex;
+    }
+    li {
+      padding: 0.6rem;
+      text-align: center;
+    }
+  }
+  
+  
