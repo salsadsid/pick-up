@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PickUp</title>
+    <link rel="stylesheet" href="./styles/styles.css">
+</head>
+<body>
+    <header>
+        <nav class="menu">
+           
+            <div class="logo">
+              <h1>PickUp</h1>
+ 
+              <div class="menu-icon">
+              
+                <i class="fas fa-bars"></i>
+              </div>
+            </div>
+           
+            <ul>
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./blank.html">About</a></li>
+                <li><a href="./blank.html">Menu</a></li>
+                <li><a href="./contact.html">Contact Us</a></li>
+            </ul>
+          </nav>
+    </header>
+    <main>
+        <section>
+            <div class="bg_img"></div>
+<div class="form_wrapper">
+  <div class="form_container">
+    <div class="title_container">
+      <h2>Contact Us</h2>
+    </div>
+    <form>
+      <div class="row clearfix">
+        <div class="col_half">
+          <label>First name</label>
+          <div class="input_field"> <span><i class="fab fa-facebook"></i></span>
+            <input type="text" name="first_name" placeholder="John" required />
+          </div>
+        </div>
+        <div class="col_half">
+          <label>Last name</label>
+          <div class="input_field"> <span><i aria-hidden="true" class="fab fa-user"></i></span>
+            <input type="text" name="last_name" placeholder="Doe" />
+          </div>
+        </div>
+      </div>
+      <div class="row clearfix">
+        <div class="col_half">
+          <label>Email</label>
+          <div class="input_field"> <span><i aria-hidden="true" class="fab fa-envelope"></i></span>
+            <input type="email" name="email" placeholder="johndoe@gmail.com" required />
+          </div>
+        </div>
+        <div class="col_half">
+          <label>Phone</label>
+          <div class="input_field"> <span><i aria-hidden="true" class="fas fa-phone"></i></span>
+            <input type="tel" name="phone" placeholder="Phone no" pattern="[0-9]{10}" />
+          </div>
+        </div>
+      </div>
+      <div class="row clearfix">
+        <div>
+          <label>Comments</label>
+          <div class="textarea_field"> <span><i aria-hidden="true" class="fa fa-comment"></i></span>
+            <textarea cols="46" rows="3" name="comments"></textarea>
+          </div>
+        </div>
+      </div>
+      <input class="button" type="submit" value="Submit" />
+    </form>
+  </div>
+</div>
+        </section>
+    </main>
+</body>
+</html>
